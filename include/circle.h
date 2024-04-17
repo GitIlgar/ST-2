@@ -13,22 +13,15 @@ class Circle {
 
  public:
     explicit Circle(double radius);
-
     double getRadius() const;
-
     double getArea() const;
-
     double getFerence() const;
-
     void setRadius(double radius);
-
     void setArea(double area);
-
     void setFerence(double ference);
 
  private:
     void calculateArea();
-
     void calculateFerence();
 };
 

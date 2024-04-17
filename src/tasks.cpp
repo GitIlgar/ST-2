@@ -5,7 +5,6 @@
 double solvePlanetAndRopeTask(double planetRadius, double radiusIncrement) {
     Circle circle(planetRadius);
     circle.setFerence(circle.getFerence() + radiusIncrement);
-
     return circle.getRadius() - planetRadius;
 }
 
@@ -17,7 +16,6 @@ double solveSwimmingPoolTask(
 ) {
     auto pool = Circle(poolRadius);
     auto poolWithArea = Circle(poolRadius + pathWidth);
-
     return (poolWithArea.getArea() - pool.getArea()) * costOfCoverage
            + poolWithArea.getFerence() * fencePrice;
 }

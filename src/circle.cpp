@@ -29,7 +29,7 @@ void Circle::calculateFerence() {
 
 void Circle::setRadius(double radius) {
     if (radius <= 0.0) {
-        throw std::invalid_argument("radius is must be positive");
+        throw std::invalid_argument("Error: radius <= 0.0");
     }
     Circle::radius = radius;
     calculateArea();
@@ -38,7 +38,7 @@ void Circle::setRadius(double radius) {
 
 void Circle::setArea(double area) {
     if (area <= 0.0) {
-        throw std::invalid_argument("area is must be positive");
+        throw std::invalid_argument("Error: area <= 0.0");
     }
     Circle::area = area;
     radius = sqrt(area / PI);
@@ -47,7 +47,7 @@ void Circle::setArea(double area) {
 
 void Circle::setFerence(double ference) {
     if (ference <= 0.0) {
-        throw std::invalid_argument("ference is must be positive");
+        throw std::invalid_argument("Error: ference <= 0.0");
     }
     Circle::ference = ference;
     radius = ference / (2 * PI);
